@@ -1,0 +1,11 @@
+type command : AZURE CLOUD SHELL
+az disk create \
+  --resource-group MC_AKS-RG_cluster-6_australiacentral \
+  --name myAKSDisk \
+  --size-gb 20 \
+  --query id --output tsv
+
+ /subscriptions/58492be6-e456-4247-a678-1ef044976ee8/resourceGroups/MC_AKS-RG_cluster-5_australiacentral/providers/Microsoft.Compute/disks/myAKSDisk
+ 
+--resource-group MC_AKS-RG(resourcegroupname cluster)_cluster-6(clustername)_australiacentral(cluster-location) \
+                      
